@@ -2,7 +2,7 @@ package com.geekbrains.tests.presenter.search
 
 import com.geekbrains.tests.presenter.PresenterContract
 
-internal interface PresenterSearchContract : PresenterContract {
+internal interface PresenterSearchContract<View> : PresenterContract<View> {
     fun searchGitHub(searchQuery: String)
     //onAttach
     //onDetach
